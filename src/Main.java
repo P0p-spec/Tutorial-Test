@@ -1,15 +1,39 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+public class User {
+    private String username;
+    private String password;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    /**
+     * Gets the username of the user.
+     */
+    public String getUsername() {
+        return username;
+    }
+
+    /**
+     * Gets the password of the user.
+     */
+    public String getPassword() {
+        return password;
+    }
+
+    /**
+     * Sets the username of the user.
+     * @param username The username to set.
+     */
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    /**
+     * Sets the password of the user.
+     * @param password The password to set.
+     */
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
